@@ -3,38 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>napi's homepage</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="description" content="Napi's personal page">
     <meta name="keywords" content="napi, developer, blog">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script> 
-    
 </head>
 <body>
     <header>
         <a href=index.html>
         <img src="napi2.png" class="napi-pic"></a>
+        <p>if you think this page is ugly <a href="https://motherfuckingwebsite.com/">click here</a></p>
         <h1>Welcome to Napi's main page</h1>
         <p><i>"I like memes and naps"</i></p>
         <hr noshade>
         <nav>
-            <ul>
-                <li>
-                    { <a href="index.html" onclick="openPage('home')">Home</a> }
-                </li>
-                <li>
-                    { <a href="https://github.com/napidev" target="_blank">Github</a> }
-                </li>
-                <li>
-                    { <a href="https://www.youtube.com/channel/UChdvWQjhoGOb18Qzsg7embw" target="_blank">YouTube</a> }
-                </li>
-                <li>
-                    { <a href="https://www.facebook.com/napidev" target="_blank">Facebook</a> }
-                </li>
-                <li>
-                    { <a href="#" onclick="openPage('contact')">Contact</a> }
-                </li>
-            </ul>    
+            <span>{ <a href="index.html" onclick="openPage('home')">Home</a> }</span>
+            <span>{ <a href="https://github.com/napidev" target="_blank">Github</a> }</span>
+            <span>{ <a href="https://www.youtube.com/channel/UChdvWQjhoGOb18Qzsg7embw" target="_blank">YouTube</a> }</span>
+            <span>{ <a href="https://www.facebook.com/napidev" target="_blank">Facebook</a> }</span>
+            <span>{ <a href="#" onclick="openPage('skills')">Skills</a> }</span>
+            <span>{ <a href="#" onclick="openPage('contact')">Contact</a> }</span>   
         </nav> 
         <hr noshade>   
     </header>
@@ -42,6 +32,19 @@
         <div id="home">
            
             <p>16/06/2022</br>Finally this page is working, I'll put important updates here.</p>
+        </div>
+        <div id="skills" class="content-hidden">
+        <p>Programming</p>
+            <ul>
+                <li>C/C++</li><progress max="100" value="30"></progress>
+                <li>Rust</li><progress max="100" value="10"></progress>
+                <li>Html</li><progress max="100" value="70"></progress>
+                <li>CSS</li><progress max="100" value="40"></progress>
+                <li>JavaScript</li><progress max="100" value="10"></progress>
+            </ul>
+        <p>Video editing</p><progress max="100" value="70"></progress>
+        <p>Math</p><progress max="100" value="50"></progress>
+        <p>Physics</p><progress max="100" value="40"></progress>          
         </div>
         <div id="contact" class="content-hidden">
             <P>Email: napidev11@gmail.com</P>
